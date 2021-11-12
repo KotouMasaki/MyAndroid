@@ -34,13 +34,13 @@ public class StartActivity extends AppCompatActivity {
                 }
             });
 
-//        Button listButton = findViewById(R.id.list_button);
-//        listButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplication(), ListActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button listButton = findViewById(R.id.list_button);
+        listButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(), ListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
