@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_return"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/send_mail"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/return_button"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/gmail_account"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/mail_account"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/frame_border"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/gmail_password"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_account" />
+
+        <EditText
+            android:id="@+id/mail_password"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/frame_border" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="610dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/mon"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_mon"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_mon"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/tue"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_tue"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_tue"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/wed"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_wed"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_wed"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/thu"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_thu"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_thu"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/fri"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_fri"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_fri"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/sat"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_sat"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_sat"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/sun"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_start"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/start_sun"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/study_time"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/time_sun"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="95dp"
+                    android:background="@drawable/frame_border" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">連絡帳アプリ</string>
+    <string name="lbl_empty">登録しているメールアドレスはありません</string>
+    <string name="btn_student">生徒用</string>
+    <string name="btn_teacher">教師用</string>
+    <string name="btn_cof">設定</string>
+    <string name="btn_user">ユーザー登録</string>
+    <string name="btn_reg">登録</string>
+    <string name="btn_delete">削除</string>
+    <string name="btn_return">戻る</string>
+    <string name="btn_cancel">キャンセル</string>
+    <string name="toast_register">登録しました</string>
+    <string name="toast_delete">削除しました</string>
+    <string name="toast_failed">登録出来ませんでした</string>
+    <string name="hint_address">メールアドレス</string>
+    <string name="hint_name">名前</string>
+    <string name="hint_account">gmailアカウントを入力してください</string>
+    <string name="hint_pass">パスワードを入力してください</string>
+    <string name="chk_mail">教師用として使う</string>
+    <string name="chk_schedule">生徒用として使う</string>
+    <string name="image_select">画像を選択</string>
+    <string name="send_mail">送信</string>
+    <string name="gmail_account">アカウント</string>
+    <string name="gmail_password">パスワード</string>
+    <string name="mail_sub">件名</string>
+    <string name="image_uri">メール本文を入力</string>
+    <string name="mon">月曜日</string>
+    <string name="tue">火曜日</string>
+    <string name="wed">水曜日</string>
+    <string name="thu">木曜日</string>
+    <string name="fri">金曜日</string>
+    <string name="sat">土曜日</string>
+    <string name="sun">日曜日</string>
+    <string name="study_start">勉強開始時間</string>
+    <string name="study_time">勉強時間</string>
+</resources>
