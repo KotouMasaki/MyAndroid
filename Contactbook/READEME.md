@@ -39,7 +39,6 @@ Android Studioで実行して下さい
 * 所属      九州デザイナー学院
 
 # License
-ライセンスを明示する
 
 "ContactBook" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
 
