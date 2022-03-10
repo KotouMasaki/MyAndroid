@@ -33,12 +33,9 @@ Android Studioで実行して下さい
 
 # Author
 
-作成情報を列挙する
-
 * 作成者    古藤
 * 所属      九州デザイナー学院
 
 # License
 
 "ContactBook" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
