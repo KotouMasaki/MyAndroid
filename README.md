@@ -1,4 +1,4 @@
-# Name MyAndroid
+# MyAndroid
 
 制作したアンドロイドアプリを公開しているリポジトリです。
 
